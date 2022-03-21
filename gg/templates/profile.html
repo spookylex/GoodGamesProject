@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" src="templates/profile.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Profile</title>
+</head>
+
+<style>
+
+.login {
+ background:url('https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login.png') no-repeat 5px 5px #484B4F;
+  width: 100px;
+  cursor:pointer;
+  border-radius:50px;
+  padding:10px 20px 10px 0;
+  color:White;
+  font-size:14px;
+  text-align:left;
+color:white;
+  text-indent:40px;
+  display:block;
+  margin:0 auto;
+ 
+  /* Animations: */
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: .4s;
+  -webkit-transition-property: all;
+  
+  -moz-transition-timing-function: ease-in-out;
+  -moz-transition-duration: .4s;
+  -moz-transition-property: all;
+}
+
+.login:hover {
+  background-image: url('https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login-hover.png');
+  background-position: 65px 5px;
+  text-indent: 20px;  
+}
+
+
+.logout {
+ background:url('https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login-hover.png') no-repeat 5px 5px #484B4F;
+  width: 100px;
+  cursor:pointer;
+  border-radius:50px;
+  padding:10px 20px 10px 0;
+  color:White;
+  font-size:14px;
+  text-align:left;
+  text-indent:40px;
+  display:block;
+  margin:0 auto;
+ 
+  /* Animations: */
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: .4s;
+  -webkit-transition-property: all;
+  
+  -moz-transition-timing-function: ease-in-out;
+  -moz-transition-duration: .4s;
+  -moz-transition-property: all;
+}
+
+.logout:hover {
+  background-image: url( 'https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login.png' );
+  background-position: 65px 5px;
+  text-indent: 15px;  
+}
+
+</style>
+
+
+<body>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-info navbar-dark navbar-static-top" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+        <div class="container" >
+          <a href="#" class="navbar-brand">GoodGames</a>
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="https://good--games.herokuapp.com/home" link="homepage.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://good--games.herokuapp.com/reviews" class="nav-link">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://good--games.herokuapp.com/games" class="nav-link">Games</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://good--games.herokuapp.com/chat" class="nav-link">Chat</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://good--games.herokuapp.com/profile" class="nav-link">Profile</a>
+              </li>
+              <li>
+                <input type="button" value="Login"
+                       class="login" onclick="window.location.href='/'"/>
+              </li>
+              <li><input type="button" value="Logout" class="logout" onclick="window.location.href='/logout'"/>
+              </li>
+            </ul>
+          </div>
+        </div> 
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="card gedf-card">
+            <img src="https://blog.lootcrate.com/wp-content/uploads/2018/02/pacman_ghosts_header.gif" class="card-img-top" alt="" style="width: 100%;
+            height: 400px;">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="col-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="mr-2">
+                            <img class="rounded-circle" width="100" src="https://picsum.photos/50/50" alt="">
+                        </div>
+
+                        <div class="ml-2">
+                          <div class="h5 m-0">{{username}}</div>
+                          <div class="h7 text-muted">{{user.username}}</div>
+                        </div>
+
+                        <div class="text-right">
+                          <div class="dropdown">
+                          <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Game IDs</button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            {% for device in playsOn %}
+                            <li><a class="dropdown-item" href="#">{{ device }}</a></li>
+                            {% endfor %}
+                          </ul>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                    
+                  <div class="col-4">
+                    <ul class="list-group list-group-flush list-group-horiztonal-sm">
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Gamers: </div>
+                          {{players}}
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Game Genres: </div>
+                          5
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                    <div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <br><br>
+
+        <form action='deleteProfile' method='GET'>
+          <button type='submit'> Delete Profile</button>
+          </form>
+        
+        
+        <div class="row">
+            <div class="col-lg-4">
+              <div class="btn-group-vertical" role="group" aria-label="socials">
+                {% for link in socialMediaLinks %}
+                <a href="#" class="btn btn-info">{{link}}</a>
+                {% endfor %}
+              </div>
+              <div class="row">
+                <br><br>
+                <div class="col-lg-4">
+                  <br><br>
+                  <div class="btn-group-vertical" role="group" aria-label="favorite games">
+                    {% for game in favoriteGames %}
+                    <a href="#" class="btn btn-info">{{game}}</a>
+                    {% endfor %}
+                </div>
+                </div>
+                
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <h2>Past Reviews</h2>
+
+              <div class="card gedf-card" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="mr-2">
+                                <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                            </div>
+                            <div class="ml-2">
+                                <div class="h5 m-0">{{username}}</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="dropdown">
+                                <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                    <div class="h6 dropdown-header">Configuration</div>
+                                    <a class="dropdown-item" href="#">Save</a>
+                                    <a class="dropdown-item" href="#">Hide</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+  
+                </div>
+
+                <div class="card-body" >
+                    <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+                    <a class="card-link link-info" href="#">
+                        <h6>Game: {{gameTitle}}</h6>
+                        <h4 class="card-title">{{reviewTitle}}</h4>
+                    </a>
+                    
+                    <p class="card-text"> {{rating}} <i class="fa fa-star"></i> </p>
+
+                    <p class="card-text">
+                        {{reviewBody}}
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="card-link link-info"><i class="fa fa-gittip"></i> Like</a>
+                    <a href="#" class="card-link link-info"><i class="fa fa-mail-forward"></i> Share</a>
+                </div>
+            </div>
+
+            <br><br>
+            
+            <div class="card gedf-card" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+              <div class="card-header">
+                  <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="mr-2">
+                              <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                          </div>
+                          <div class="ml-2">
+                              <div class="h5 m-0">{{username}}</div>
+                          </div>
+                      </div>
+                      <div>
+                          <div class="dropdown">
+                              <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <i class="fa fa-ellipsis-h"></i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                  <div class="h6 dropdown-header">Configuration</div>
+                                  <a class="dropdown-item" href="#">Save</a>
+                                  <a class="dropdown-item" href="#">Hide</a>
+                                  <a class="dropdown-item" href="#">Report</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+              <div class="card-body" >
+                  <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+                  <a class="card-link link-info" href="#">
+                      <h6>Game: Legend of Zelda: Breath of the Wild</h6>
+                      <h4 class="card-title">Kinda loved it!</h4>
+                  </a>
+                  
+                  <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star rating-color"></i> <i class="fa fa-star rating-color"></i> <i class="fa fa-star rating-color"></i> <i class="fa fa-star"></i> </div>
+
+                  <p class="card-text">
+                      Okay this game is kind of awesome. I love that they've included classic maps and more characters that we can play!
+                      Definitely will be reccomending this one, especially if you have been a fan of the franchise for a long time.
+                  </p>
+              </div>
+              <div class="card-footer">
+                  <a href="#" class="card-link link-info"><i class="fa fa-gittip"></i> Like</a>
+                  <a href="#" class="card-link link-info"><i class="fa fa-mail-forward"></i> Share</a>
+              </div>
+          </div>
+            
+
+            </div>
+
+        </div>
+        <br><br><br>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

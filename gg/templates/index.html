@@ -1,0 +1,69 @@
+{% load socialaccount %}
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" src="templates/profile.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>GoodGames Profile</title>
+</head>
+<nav class="navbar navbar-expand-lg bg-info navbar-dark navbar-static-top" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+      <div class="container" >
+        <a href="#" class="navbar-brand">GoodGames</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="https://good--games.herokuapp.com/home" link="homepage.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://good--games.herokuapp.com/reviews" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://good--games.herokuapp.com/games" class="nav-link">Games</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://good--games.herokuapp.com/chat" class="nav-link">Chat</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://good--games.herokuapp.com/profile" class="nav-link">Profile</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div> 
+    </nav>
+<br><br>
+{% if user.is_authenticated %}
+  <p>Welcome {{ user.username }}!</p>
+{% else %}
+  <a href="{% provider_login_url 'google' %}">Login With Google</a>
+{% endif %}
+<button id="createUser" class="float-left submit-button" >Create User</button>
+
+<script type="text/javascript">
+    document.getElementById("createUser").onclick = function () {
+        location.href = "https://good--games.herokuapp.com/makeProfile/";
+    };
+</script>
+</body>
+</html>

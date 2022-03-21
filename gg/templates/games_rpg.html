@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" src="templates/profile.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>RPG Games</title>
+</head>
+<body>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+
+      <style>
+        
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          margin-left: 100px; 
+          margin-top: 50px;
+          width: 20%;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
+
+        .login {
+  background:url('https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login.png') no-repeat 5px 5px #484B4F;
+    width: 100px;
+    cursor:pointer;
+    border-radius:50px;
+    padding:10px 20px 10px 0;
+    color:White;
+    font-size:14px;
+    text-align:left;
+  color:white;
+    text-indent:40px;
+    display:block;
+    margin:0 auto;
+  
+    /* Animations: */
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: .4s;
+    -webkit-transition-property: all;
+    
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-duration: .4s;
+    -moz-transition-property: all;
+  }
+
+  .login:hover {
+    background-image: url('https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login-hover.png');
+    background-position: 65px 5px;
+    text-indent: 20px;  
+  }
+
+
+  .logout {
+  background:url('https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login-hover.png') no-repeat 5px 5px #484B4F;
+    width: 100px;
+    cursor:pointer;
+    border-radius:50px;
+    padding:10px 20px 10px 0;
+    color:White;
+    font-size:14px;
+    text-align:left;
+    text-indent:40px;
+    display:block;
+    margin:0 auto;
+  
+    /* Animations: */
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: .4s;
+    -webkit-transition-property: all;
+    
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-duration: .4s;
+    -moz-transition-property: all;
+  }
+
+  .logout:hover {
+    background-image: url( 'https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login.png' );
+    background-position: 65px 5px;
+    text-indent: 15px;  
+}
+
+        </style>
+
+<nav class="navbar navbar-expand-lg bg-info navbar-dark navbar-static-top" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+  <div class="container" >
+    <a href="#" class="navbar-brand">GoodGames</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navmenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="https://good--games.herokuapp.com/home" link="homepage.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://good--games.herokuapp.com/reviews" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://good--games.herokuapp.com/games" class="nav-link">Games</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://good--games.herokuapp.com/chat" class="nav-link">Chat</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://good--games.herokuapp.com/profile" class="nav-link">Profile</a>
+          </li>
+          <li>
+            <input type="button" value="Login"
+                   class="login" onclick="window.location.href='/'"/>
+          </li>
+          <li><input type="button" value="Logout" class="logout" onclick="window.location.href='/logout'"/>
+          </li>
+        </ul>
+      </div>
+  </div> 
+</nav>
+
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>
+  
+        <div class="row">
+        
+            <div class="column" >
+                <br> <h3>Genres</h3> <br>
+                <div class="btn-group-vertical" role="group" aria-label="socials">
+                    <a href="#" class="btn btn-info" onclick="window.location.href='/games/classic/'">Classic</a>
+                    <a href="#" class="btn btn-info" onclick="window.location.href='/games/adventure/'">Adventure</a>
+                    <a href="#" class="btn btn-info" onclick="window.location.href='/games/rpg/'">RPG</a>
+                    <a href="#" class="btn btn-info" onclick="window.location.href='/games/fps/'">FPS</a>
+
+                </div>
+            </div>
+
+            
+          <div class="column">
+            <br> <h3>RPG</h3> <br>
+              
+            <br> <h4>Legend of Zelda</h4>
+            <img class="square" style=" width: 300px; height: 400px; border-radius: 10%; box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); " src="https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg"  alt="" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+            <br><br><h6>Rating: E </h6>
+            <h6>Console: PS4 </h6>
+            <br><br>
+
+            <br> <h4>Genshin Impact</h4>
+            <img class="square" style=" width: 300px; height: 400px; border-radius: 10%; box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); " src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_GenshinImpact_miHoYoLimited_S2_1200x1600-c12cdcc2cac330df2185aa58c508e820" alt="" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+            <br><br><h6>Rating: T </h6>
+            <h6>Console: Nintendo Wii </h6>
+            <br><br>
+
+            <br> <h4>Final Fantasy XV</h4>
+            <img class="square" style=" width: 300px; height: 400px; border-radius: 10%; box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); " src="https://m.media-amazon.com/images/I/51SpnQyfI-L._SX342_.jpg" alt="" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+            <br><br><h6>Rating: T </h6>
+            <h6>Console: PC </h6>
+            <br><br>
+
+            <br> <h4>Hellblade Senuas Sacrifice</h4>
+            <img class="square" style=" width: 300px; height: 200px; border-radius: 10%; box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); " src="https://images.gog-statics.com/e80ba57bd7909faed61f31d878ec28745c623fba541e10867ae82f7ffaf5c6e0_product_card_v2_mobile_slider_639.jpg" alt="" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+            <br><br><h6>Rating: T </h6>
+            <h6>Console: PC </h6>
+            <br><br>
+
+            <br> <h4>Persona 5</h4>
+            <img class="square" style=" width: 300px; height: 400px; border-radius: 10%; box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); " src="https://image.api.playstation.com/vulcan/img/cfn/11307XlqDFlHmHWGjBPndSappCDTnE9OmnP2P-dSzcvLX9i0pvH_okJOl6dP1AnZefxthD-2k3RrsdzYU_BqUy9K5_sv-Tnx.png" alt="" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+            <br><br><h6>Rating: M </h6>
+            <h6>Console: PS5 </h6>
+            <br><br>
+
+            <br> <h4>The Elder Scrolls V: Skyrim</h4>
+            <img class="square" style=" width: 300px; height: 200px; border-radius: 10%; box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); " src="https://www.nintendo.com//content/dam/noa/en_US/games/switch/t/the-elder-scrolls-v-skyrim-switch/the-elder-scrolls-v-skyrim-switch-hero.jpg" alt="" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+            <br><br><h6>Rating: M </h6>
+            <h6>Console: PSVita </h6>
+            <br><br>
+
+            <br> <h4>The Witcher 3: Wild Hunt</h4>
+            <img class="square" style=" width: 300px; height: 400px; border-radius: 10%; box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); " src="https://image.api.playstation.com/vulcan/img/rnd/202009/2913/TQKAd8U6hnIFQIIcz6qnFh8C.png" alt="" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+            <br><br><h6>Rating: M </h6>
+            <h6>Console: Xbox 360 </h6>
+            <br><br>
+
+            <br> <h4>Fallout 4</h4>
+            <img class="square" style=" width: 300px; height: 400px; border-radius: 10%; box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); " src="https://cdn.cdkeys.com/500x706/media/catalog/product/f/a/fallout_4.jpeg" alt="" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+            <br><br><h6>Rating: M </h6>
+            <h6>Console: PSVita </h6>
+            <br><br>
+
+            <br> <h4>Final Fantasy XV</h4>
+            <img class="square" style=" width: 300px; height: 400px; border-radius: 10%; box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); " src="https://m.media-amazon.com/images/I/51SpnQyfI-L._SX342_.jpg" alt="" style="box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); ">
+            <br><br><h6>Rating: T </h6>
+            <h6>Console: PC </h6>
+            <br><br>
+            <br><br><br>
+
+
+        </div>
+
+        
+        </div>
+
+      </body>
+      </html>
+      
+
